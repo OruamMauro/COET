@@ -6,7 +6,7 @@ RED="\e[31m"
 L_MAGENTA="\e[95m"
 END="\e[0m"
 
-set -o allexport
+#set -o allexport
 
 # Function to validate if the code is alphanumeric and has 10 characters
 function validate_code() {
