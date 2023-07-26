@@ -1,1 +1,1 @@
-export REC_DIR=/tmp/$(cat /tmp/.USER_CODE)
+export USER_CODE=$(cat /tmp/.USER_CODE)
