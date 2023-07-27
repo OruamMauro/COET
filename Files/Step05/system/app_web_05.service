@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=bepo
 Group=heart
-ExecStart=python /opt/adenza/05/App/app.py
+ExecStart=/opt/adenza/05/run_app.sh
 
 [Install]
 WantedBy=multi-user.target

@@ -11,17 +11,17 @@ def index():
 @app.route('/fetch_data', methods=['POST'])
 def fetch_data():
     api_url = 'https://reqres.in/api/users/3'
-    response = requests.get(api_url)
+    response = requests.get(api_url, timeout=(5, None))
     
     if response.status_code == 200:
-        output_dir = '/tmp/consulta'
+        output_dir = '/tmp/REST'
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
         
-        output_file = os.path.join(output_dir, 'usuario_3.txt')
+        output_file = os.path.join(output_dir, 'user_3.txt')
         with open(output_file, 'w') as f:
             f.write(response.text)
-        return f"Data fetched successfully and saved to {output_file}"
+        return f"Data fetched successfully and saved."
     else:
         return "Failed to fetch data from the API."
 
