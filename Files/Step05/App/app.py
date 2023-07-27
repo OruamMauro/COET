@@ -25,7 +25,8 @@ def fetch_data():
         output_file = os.path.join(output_dir, 'user_3.txt')
         with open(output_file, 'w') as f:
             f.write(response.text)
-        return f"Data fetched successfully and saved."
+        #return f"Data fetched successfully and saved."
+        return render_template('ok.html')
     else:
         return "Failed to fetch data from the API."
 
