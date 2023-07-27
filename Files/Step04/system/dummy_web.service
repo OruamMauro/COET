@@ -1,0 +1,10 @@
+[Unit]
+Description=This is a dummy web service and should not be running
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/var/opt/dummy_web_service
+
+[Install]
+WantedBy=multi-user.target

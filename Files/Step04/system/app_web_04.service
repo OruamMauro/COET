@@ -1,0 +1,10 @@
+[Unit]
+Description=This is a dummy web service and should not be running
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=python /opt/adenza/04/App/app.py
+
+[Install]
+WantedBy=multi-user.target
