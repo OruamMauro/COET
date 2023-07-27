@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Task number 4</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task number 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+        body{
+            margin:0;
+            background-color: #132E36;
+            color: #FFFFFF;
+            font-family: Permanent Marker;
+        }
+        .container{
+            height: 500px;
+            width: 100%;
+            position: absolute;  
+        }
+        .text h1{
+            position: absolute;
+            top:10%;
+            left:50%;
+            transform: translateX(-50%);
+            font-size: 2.5vw;
+        }
+        .text form{
+            position: absolute;
+            top:55%;
+            left:50%;
+            transform: translateX(-50%);
+            font-size: 2vw;
+        }
+        .form-submit-button {
+            background: #f7956b;
+            font-family: Permanent Marker;
+            font-size: 2.5vw;
+            color: #FFFFFF;
+            border: 1px solid #eee;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px #eee;
+            text-shadow: none;
+        }
+
+        .form-submit-button:hover {
+            background: #FF6424;
+            color: #FFFFFF;
+            border: 1px solid #eee;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px #eee;
+            text-shadow: none;
+            cursor: pointer;
+        }
+        a{
+            color: #FF6424;
+        }
+        @keyframes sl{
+            0%{ transform: scale(0.8);}
+            50%{ transform: scale(1.5);}
+            100% {transform: scale(1);}
+        }
+    </style>
 </head>
 <body>
-    <h1>Click the button to fetch data from the API</h1>
-    <form action="/fetch_data" method="post">
-        <input type="submit" value="Run">
-    </form>
+    <div class="container">
+    <div class="text">
+        <h1>Click the button to fetch data from the API <a href="https://reqres.in/api/" target="_blank">reqres.in</a></h1>
+        <form action="/fetch_data" method="post">
+            <input class="form-submit-button" type="submit" value="Run">
+        </form>
+    </div>
+    </div>
 </body>
 </html>
