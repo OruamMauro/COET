@@ -15,6 +15,8 @@ function validate_code() {
     echo -e "The code ${CYAN}\"$code\"${END} is valid!"
     echo $code > /tmp/.USER_CODE
     source /opt/.Fe7ege5/Tools/set_vars.sh
+    unalias StartScenario
+    history -c && history -w
     exit 0
   else
     echo -e "Error: The code ${RED}\"$code\"${END} is not valid. It should be alphanumeric and have 10 characters."
