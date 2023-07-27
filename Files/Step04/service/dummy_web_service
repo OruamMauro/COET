@@ -1,2 +1,2 @@
 #!/bin/bash
-nc -l 8080 1>&2 > /var/log/web.log
+python3 -m http.server 8080
