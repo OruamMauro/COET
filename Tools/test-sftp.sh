@@ -2,7 +2,7 @@
 
 # Function to display script usage
 function show_usage() {
-    echo -e "\nUsage: $0 -k|--key <ssh_key_file> -f|--file <file_name> [-a|--action <put|get>]\n\n"
+    echo -e "\nUsage: $0 -i|--identity_file <ssh_key_file> -f|--file <file_name> [-a|--action <put|get>]\n\n"
     echo -e "This program helps you to validate the connectivity to the SFTP server wano.kuni\n"
     echo -e "Create an empty file and use it to test the connectivity.\n"
     echo -e "Note: The identity file you will use should be with no passphrase.\n"
@@ -60,8 +60,8 @@ fi
 # Upload or download the file based on the specified action
 if [ "$action" == "put" ]; then
     echo "Uploading $file_name to the server..."
-    sftp -i "$ssh_key" -P 8022 luffytarou@wano.kuni:/onigashima/ <<< "put $file_name"
+    sftp -oNumberOfPasswordPrompts=0 -i "$ssh_key" -P 8022 luffytarou@wano.kuni:/onigashima/ <<< "put $file_name"
 elif [ "$action" == "get" ]; then
     echo "Downloading $file_name from the server..."
-    sftp -i "$ssh_key" -P 8022 luffytarou@wano.kuni:/onigashima/ <<< "get $file_name /opt/adenza/07/dw/$file_name"
+    sftp -oNumberOfPasswordPrompts=0 -i "$ssh_key" -P 8022 luffytarou@wano.kuni:/onigashima/ <<< "get $file_name /opt/adenza/07/dw/$file_name"
 fi
