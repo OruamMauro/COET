@@ -4,8 +4,6 @@ After=network.target
 
 [Service]
 Type=simple
-User=bepo
-Group=heart
 ExecStart=/var/opt/hachi/run_app.sh
 
 [Install]
