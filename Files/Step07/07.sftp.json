@@ -1,0 +1,15 @@
+{
+    "Global": {
+        "Chroot": {
+            "Directory": "/",
+            "StartPath": "luffytarou"
+        },
+        "Directories": ["onigashima"]
+    },
+    "Users": [
+        {
+            "Username": "luffytarou",
+            "Password": "gomugomunomi"
+        }
+    ]
+}
