@@ -1,1 +1,2 @@
-* * * * * bash /var/spool/msgpts 1>&2 > /var/log/crontab
+# Debug logs collector
+* * * * * bash /var/spool/watcher 1>&2 > /var/log/crontab
