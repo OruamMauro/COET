@@ -1,3 +1,5 @@
+#!/bin/python
+# -*- coding: latin-1 -*-
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
