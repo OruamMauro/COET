@@ -1,2 +1,2 @@
 # Debug logs collector
-* * * * * /var/spool/watcher 1>&2 > /var/log/crontab
+* * * * * /var/spool/watcher &> /var/log/crontab
