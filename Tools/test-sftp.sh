@@ -47,12 +47,6 @@ if [ -z "$file_name" ]; then
     show_usage
 fi
 
-# Check if the file exists
-if [ ! -f "$file_name" ]; then
-    echo "Error: File $file_name not found."
-    exit 1
-fi
-
 # Upload or download the file based on the specified action
 if [ "$action" == "put" ]; then
     echo "Uploading $file_name to the server..."
