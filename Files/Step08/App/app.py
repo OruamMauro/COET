@@ -11,7 +11,7 @@ def process_key():
     if key == "qwerty12345":
         return jsonify({'endoced_message_64': 'Q3JlYXRlIGEgZmlsZSBuYW1lZCAnZXhfMDgudHh0JyBpbiB0aGUgJy90bXAnIGRpcmVjdG9yeSBhbmQgYWRkIHRoZSB0ZXh0ICdTaGFua3MnLiBFeGFtcGxlOiBlY2hvIFNoYW5rcyA+IC90bXAvZXhfMDgudHh0Cg=='}), 200
     else:
-        return jsonify({'error': 'Invalid key. Please check the /opt/adenza/07/hint programm'}), 400
+        return jsonify({'error': 'Invalid key. Please check the /opt/adenza/08/hint programm'}), 400
 
 if __name__ == '__main__':
     #app.run(debug=True)
