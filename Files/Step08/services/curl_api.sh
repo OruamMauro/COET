@@ -36,10 +36,9 @@ done
 # Check if required options are provided
 if [ -z "$secret_value" ]; then
     echo -e "${RED}Error: Missing required option.${END}"
+else
+    # Perform the curl request
+    curl -X POST -H "Content-Type: application/json" -d '{"key":"'"$secret_value"'"}' http://marineford.island:8090/shanks/red
+    #curl -X POST -H "Content-Type: application/json" -d '{"key":"'"$secret_value"'"}' http://marineford.island:8090/shanks/red -o /tmp/response.json
 fi
-
-# Perform the curl request
-curl -X POST -H "Content-Type: application/json" -d '{"key":"'"$secret_value"'"}' http://marineford.island:8090/shanks/red
-#curl -X POST -H "Content-Type: application/json" -d '{"key":"'"$secret_value"'"}' http://marineford.island:8090/shanks/red -o /tmp/response.json
-
 #echo "Curl request completed. Response saved in /tmp/response.json."
