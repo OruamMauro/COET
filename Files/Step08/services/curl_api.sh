@@ -1,9 +1,15 @@
 #!/bin/bash
 
+CYAN="\e[36m"
+YELLOW="\e[33m"
+RED="\e[31m"
+L_MAGENTA="\e[95m"
+END="\e[0m"
+
 # Function to display script usage
 function show_usage() {
-    echo -e "Usage: $0 -s|--secret <secret_value>\n\n"
-    echo -e "Please check the /opt/adenza/08/hint programm\n"
+    echo -e "\n${YELLOW}Usage:${END} $0 -s|--secret <secret_value>\n\n"
+    echo -e "Please check the ${CYAN}/opt/adenza/08/hint${END} programm\n"
     exit 1
 }
 
@@ -21,8 +27,7 @@ while [[ $# -gt 0 ]]; do
             show_usage
             ;;
         *)
-            echo "Error: Unknown option '$key'"
-            show_usage
+            echo -e "${RED}Error: Unknown option '$key'${END}"
             ;;
     esac
     shift
@@ -30,8 +35,7 @@ done
 
 # Check if required options are provided
 if [ -z "$secret_value" ]; then
-    echo "Error: Missing required option."
-    show_usage
+    echo -e "${RED}Error: Missing required option.${END}"
 fi
 
 # Perform the curl request

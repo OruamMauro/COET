@@ -1,11 +1,17 @@
 #!/bin/bash
 
+CYAN="\e[36m"
+YELLOW="\e[33m"
+RED="\e[31m"
+L_MAGENTA="\e[95m"
+END="\e[0m"
+
 # Function to display script usage
 function show_usage() {
-    echo -e "\nUsage: $0 -f|--file <file_name>\n\n"
-    echo -e "This program helps you to validate the connectivity to the SFTP server wano.kuni\n"
+    echo -e "\n${YELLOW}Usage:${END} $0 -f|--file <file_name>\n\n"
+    echo -e "This program helps you to validate the connectivity to the SFTP server ${CYAN}wano.kuni${END}\n"
     echo -e "Create an empty file and use it to test the connectivity.\n"
-    echo -e "Note: The identity file (/home/luffy/.ssh/id_rsa) should be with no passphrase.\n"
+    echo -e "Note: The identity file (${CYAN}/home/luffy/.ssh/id_rsa${END}) should be with no passphrase.\n"
     exit 1
 }
 
@@ -25,7 +31,7 @@ while [[ $# -gt 0 ]]; do
             shift
             action="$1"
             if [[ "$action" != "put" && "$action" != "get" ]]; then
-                echo "Error: Invalid action. Use 'put' for upload or 'get' for download."
+                echo -e "${RED}Error: Invalid action. Use 'put' for upload or 'get' for download.${END}"
                 show_usage
             fi
             ;;
@@ -34,7 +40,7 @@ while [[ $# -gt 0 ]]; do
             show_usage
             ;;
         *)
-            echo "Error: Unknown option '$key'"
+            echo "-e ${RED}Error: Unknown option '$key'${END}"
             show_usage
             ;;
     esac
@@ -43,7 +49,7 @@ done
 
 # Check if required options are provided
 if [ -z "$file_name" ]; then
-    echo "Error: Missing required options."
+    echo -e "${RED}Error: Missing required options.${END}"
     show_usage
 fi
 
