@@ -15,6 +15,7 @@ function show_usage() {
 
 # Parse command-line options
 while [[ $# -gt 0 ]]; do
+    key="$1"
 
     case $key in
         -h|--help)
