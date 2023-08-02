@@ -1,0 +1,66 @@
+Script started on 2023-08-02 02:33:18+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="130" LINES="33"]
+history -c && history -w
+export PS1="\[$(tput setaf 196)\]\u\[$(tput setaf 214)\]@\[$(tput setaf 10)\]ubuntu \[$(tput setaf 13)\]\D{%Y%m%d-%H:%M} \[$(tput sgr0)\] \[$(tput setaf 11)\]\w \[$(tput sgr0)\]\n$ "
+clear
+ubuntu $ history -c && history -w
+ubuntu $ export PS1="\[$(tput setaf 196)\]\u\[$(tput setaf 214)\]@\[$(tput setaf 10)\]ubuntu \[$(tput setaf 13)\]\D{%Y%m%d-%H:%M} \\[$(tput sgr0)\] \[$(tput setaf 11)\]\w \[$(tput sgr0)\]\n$ "
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ clear
+[H[2J[3J[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ ^C
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo skip > /tmp/ZlDrMUGpd6uclVyu2xBF
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo "waiting for init-background-script to finish"
+waiting for init-background-script to finish
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ while [ ! -f /tmp/bg3 ]; do sleep 1; echo -n "."; done
+.[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ clear
+[H[2J[3J[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ ^C
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo skip > /tmp/Ur4j4sJz2ImEJVZOirma
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo "waiting for init-background-script to finish"
+waiting for init-background-script to finish
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ while [ ! -f /tmp/bg4 ]; do sleep 1; echo -n "."; done
+...[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ clear
+[H[2J[3J[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ ^C
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo skip > /tmp/wH7QcA8ywYLNXEQdWLxz
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo "waiting for init-background-script to finish"
+waiting for init-background-script to finish
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ while [ ! -f /tmp/bg5 ]; do sleep 1; echo -n "."; done
+..[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ clear
+[H[2J[3J[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ ^C
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo skip > /tmp/RLUcEoPexxJp3xh0W1k5
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo "waiting for init-background-script to finish"
+waiting for init-background-script to finish
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ while [ ! -f /tmp/bg6 ]; do sleep 1; echo -n "."; done
+..[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ clear
+[H[2J[3J[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ ^C
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo skip > /tmp/p8UyOuN4SuKEBAceD14q
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ echo "waiting for init-background-script to finish"
+waiting for init-background-script to finish
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:33 (B[m [93m~ (B[m
+$ while [ ! -f /tmp/bg7 ]; do sleep 1; echo -n "."; done
+...........[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:34 (B[m [93m~ (B[m
+$  #docker exec sftp07 chown -R luffytarou /home/luffytarou
+[38;5;196mroot[38;5;214m@[92mubuntu [95m20230802-02:34 (B[m [93m~ (B[m
+$  #docker cp /home/ubuntu/.config/.Fe7ege5/Files/Step07/kaidou.txt sftp07:/home/luffytarou/onigashima
+[38;5;196m
