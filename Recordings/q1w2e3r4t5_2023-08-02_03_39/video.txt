@@ -1,1 +1,0 @@
-/var/run/kc-internal/scenario-service/background9.sh: line 11: asciinema: command not found

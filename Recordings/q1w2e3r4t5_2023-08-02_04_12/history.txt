@@ -1,7 +1,0 @@
-'q1w2e3r4t5','02','yes','Wed Aug  2 04:09:35 UTC 2023'
-'q1w2e3r4t5','03','yes','Wed Aug  2 04:10:23 UTC 2023'
-'q1w2e3r4t5','04','yes','Wed Aug  2 04:12:10 UTC 2023'
-'q1w2e3r4t5','05','yes','Wed Aug  2 04:12:15 UTC 2023'
-'q1w2e3r4t5','06','yes','Wed Aug  2 04:12:21 UTC 2023'
-'q1w2e3r4t5','07','yes','Wed Aug  2 04:12:50 UTC 2023'
-'q1w2e3r4t5','08','yes','Wed Aug  2 04:12:58 UTC 2023'
