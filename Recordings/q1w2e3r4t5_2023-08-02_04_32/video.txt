@@ -1,0 +1,13 @@
+View the recording at:
+
+    https://asciinema.org/a/2ahaUKaQJ7HLaieG9DC88yhC1
+
+This installation of asciinema recorder hasn't been linked to any asciinema.org
+account. All unclaimed recordings (from unknown installations like this one)
+are automatically archived 7 days after upload.
+
+If you want to preserve all recordings made on this machine, connect this
+installation with asciinema.org account by opening the following link:
+
+    https://asciinema.org/connect/6e9f0521-1cff-4c03-8f1f-a3e5e61677a2
+
