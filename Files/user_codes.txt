@@ -1,4 +1,4 @@
 CODE,NAME,ATTEMPT
-AdenZaTEST,Mauro Delgadillo,1
+AdenZaTEST,Mauro Delgadillo,0
 DoYZovIdQr,Fulanito,1
 wPOxBEvXHB,Menganito,2
