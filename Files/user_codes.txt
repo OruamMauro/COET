@@ -1,4 +1,9 @@
 CODE,NAME,ATTEMPT
+<<<<<<< HEAD
 AdenzaTEST,Mauro Delgadillo,0
 DoYZovIdQr,Fulanito,1
+=======
+AdenzaTEST,Mauro Delgadillo,1
+DoYZovIdQr,Fulanito,2
+>>>>>>> 0330bafebca47025de4f2ffcb14a41d9dc10d15a
 wPOxBEvXHB,Menganito,2
