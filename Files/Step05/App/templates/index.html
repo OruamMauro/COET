@@ -55,79 +55,16 @@
         a{
             color: #FF6424;
         }
-        .popup-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .popup-box {
-            background-color: #fff;
-            color: #132E36;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .close-button {
-            background: #f7956b;
-            font-family: Permanent Marker;
-            font-size: 2vw;
-            color: #FFFFFF;
-            border: 1px solid #eee;
-            border-radius: 20px;
-            box-shadow: 5px 5px 5px #eee;
-            text-shadow: none;
-        }
-        .close-button:hover {
-            background: #FF6424;
-            color: #FFFFFF;
-            border: 1px solid #eee;
-            border-radius: 20px;
-            box-shadow: 5px 5px 5px #eee;
-            text-shadow: none;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-    
     <div class="text">
         <h1>Click the button to fetch data from the API <a href="https://reqres.in/api/" target="_blank">reqres.in</a></h1>
         <form action="/fetch_data" method="post">
-            <input class="form-submit-button" type="submit" value="Run" onclick="showPopup(event)">
+            <input class="form-submit-button" type="submit" value="Run">
         </form>
     </div>
     </div>
-    <div class="popup-container" id="popupContainer">
-        <!-- Popup box -->
-        <div class="popup-box">
-            <h2>Request sent</h2>
-            <p>Processing the request...</p>
-            <button class="close-button" onclick="closePopup()">Close</button>
-        </div>
-    </div>
-    <script>
-        function showPopup(event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Show the popup container
-            var popupContainer = document.getElementById('popupContainer');
-            popupContainer.style.display = 'flex';
-        }
-
-        function closePopup() {
-            // Hide the popup container
-            var popupContainer = document.getElementById('popupContainer');
-            popupContainer.style.display = 'none';
-        }
-    </script>
 </body>
 </html>
