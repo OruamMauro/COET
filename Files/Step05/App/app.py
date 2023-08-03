@@ -15,7 +15,7 @@ def index():
 @app.route('/fetch_data', methods=['POST'])
 def fetch_data():
     api_url = 'https://reqres.in/api/users/3'
-    response = requests.get(api_url, timeout=(5, None))
+    response = requests.get(api_url, timeout=(3, None))
     
     if response.status_code == 200:
         output_dir = '/tmp/REST'
