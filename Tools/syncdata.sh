@@ -1,10 +1,15 @@
 #!/bin/bash
 DATE=$(date +%F)
+WD=/home/ubuntu/.config/.Fe7ege5/Recordings/tmp/${DATE}
 
-mkdir -p /home/ubuntu/.config/.Fe7ege5/Recordings/tmp/${DATE}
-cp /tmp/asciinema/rec.cast /home/ubuntu/.config/.Fe7ege5/Recordings/tmp/${DATE}
-echo "$(date)" >> /home/ubuntu/.config/.Fe7ege5/Recordings/tmp/${DATE}/terminals.txt
-ps -fea|grep pts >> /home/ubuntu/.config/.Fe7ege5/Recordings/tmp/${DATE}/terminals.txt
+if [ ! -d "$WD" ]; then
+    mkdir -p $WD
+fi
+if [ ! -f "/tmp/asciinema/rec.cast" ]; then
+    cp /tmp/asciinema/rec.cast $WD
+fi
+echo "$(date)" >> $WD/terminals.txt
+ps -fea|grep pts >> $WD/terminals.txt
 cd /home/ubuntu/.config/.Fe7ege5/
 git pull --rebase
 git add *
