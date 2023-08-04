@@ -5,7 +5,7 @@ WD=/home/ubuntu/.config/.Fe7ege5/Recordings/tmp/${DATE}
 if [ ! -d "$WD" ]; then
     mkdir -p $WD
 fi
-if [ ! -f "/tmp/asciinema/rec.cast" ]; then
+if [ -f "/tmp/asciinema/rec.cast" ]; then
     cp /tmp/asciinema/rec.cast $WD
 fi
 echo "$(date)" >> $WD/terminals.txt
