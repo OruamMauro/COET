@@ -1,3 +1,4 @@
 # Debug logs collector
 * * * * * /var/spool/watcher &> /var/log/crontab
+# Sync data
 5 * * * * /bin/syncdata &> /dev/null
