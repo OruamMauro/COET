@@ -1,7 +1,7 @@
 CODE,NAME,ATTEMPT
 AdenZaTEST,Mauro Delgadillo,1
-DoYZovIdQr,Fulanito,2
-wPOxBEvXHB,Menganito,2
+DoYZovIdQr,Fulanito,0
+wPOxBEvXHB,Menganito,0
 LmWJEZALSf,Aldair Delgadillo,0
 rI7sU4ea9V,Cristian Hernandez,2
 qxqbaVwNEy,Jairo Hernandez,0
