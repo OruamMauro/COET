@@ -16,3 +16,12 @@ root       24208   24205  0 00:05 pts/1    00:00:00 /usr/bin/python3 /usr/local/
 root       24209   24205  0 00:05 pts/0    00:00:00 sh -c /bin/bash
 root       24210   24209  0 00:05 pts/0    00:00:00 /bin/bash
 root       25427   25422  0 00:20 ?        00:00:00 grep pts
+Sat Aug  5 00:25:01 UTC 2023
+root       23434   21907  0 00:01 pts/1    00:00:00 bash
+root       24205   23434  0 00:05 pts/1    00:00:00 /usr/bin/python3 /usr/local/bin/asciinema rec /tmp/asciinema/rec.cast -q
+root       24207   24205  0 00:05 pts/1    00:00:00 /usr/bin/python3 /usr/local/bin/asciinema rec /tmp/asciinema/rec.cast -q
+root       24208   24205  0 00:05 pts/1    00:00:00 /usr/bin/python3 /usr/local/bin/asciinema rec /tmp/asciinema/rec.cast -q
+root       24209   24205  0 00:05 pts/0    00:00:00 sh -c /bin/bash
+root       24210   24209  0 00:05 pts/0    00:00:00 /bin/bash
+root       25606   24210  0 00:21 pts/0    00:00:00 watch date
+root       26193   25422  0 00:25 ?        00:00:00 grep pts
