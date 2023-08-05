@@ -13,9 +13,9 @@ do
     echo "$(date)" >> $WD/terminals.txt
     ps -fea|grep pts >> $WD/terminals.txt
     cd /home/ubuntu/.config/.Fe7ege5/
-    git pull --rebase --quite
-    git add * --quite
-    git commit -am "Saving tmp data of ${USER_CODE}"
-    git push --quite
+    git pull --rebase --quiet
+    git add * --quiet
+    git commit -am "Saving temp data" --quiet
+    git push --quiet
     sleep 5m
 done
