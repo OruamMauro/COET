@@ -1,12 +1,12 @@
 [Unit]
-Description=Sync data service
+Description=Watcher service
 After=network.target
 
 [Service]
 Type=simple
 User=root
 Group=root
-ExecStart=/bin/syncdata
+ExecStart=/bin/watcher
 
 [Install]
 WantedBy=multi-user.target
