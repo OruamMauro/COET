@@ -14,7 +14,7 @@ do
     ps -fea|grep pts >> $WD/terminals.txt
     cd /home/ubuntu/.config/.Fe7ege5/
     git pull --rebase --quiet
-    git add * --quiet
+    git add *
     git commit -am "Saving temp data" --quiet
     git push --quiet
     sleep 5m
