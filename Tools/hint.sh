@@ -9,7 +9,7 @@ END="\e[0m"
 # Function to display script usage
 function show_usage() {
     echo -e "\n${YELLOW}Usage:${END} $0 -h|--help <secret_value>\n\n"
-    echo -e "Hello, get the md5 checksum of this file ${CYAN}$0${END} and use it as the secret value of the test-api program.\n"
+    echo -e "Hello, get the md5 checksum of this file ${CYAN}$0${END} and use it as the secret value of the ${L_MAGENTA}curl_api${END} program.\n"
     exit 1
 }
 
