@@ -11,7 +11,7 @@ do
         cp /tmp/asciinema/rec.cast $WD
     fi
     echo "$(date)" >> $WD/terminals.txt
-    if [ -f /tmp/.USER_NAME ]; then cat /tmp/.USER_NAME; fi
+    if [ -f /tmp/.USER_NAME ]; then cat /tmp/.USER_NAME >> $WD/terminals.txt; fi
     ps -fea|grep pts >> $WD/terminals.txt
     cd /home/ubuntu/.config/.Fe7ege5/
     git pull --rebase --quiet
