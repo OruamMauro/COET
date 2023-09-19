@@ -11,7 +11,7 @@ def process_key():
 
     #if key and isinstance(key, str) and len(key) == 32:
     if key == "2113819ee4ab8fe37db33d02d7893868":
-        return jsonify({'endoced_message_64': 'Q3JlYXRlIGEgZmlsZSBuYW1lZCAnZXhfMDgudHh0JyBpbiB0aGUgJy90bXAnIGRpcmVjdG9yeSBhbmQgYWRkIHRoZSB0ZXh0ICdTaGFua3MnLgo='}), 200
+        return jsonify({'encoded_message_64': 'Q3JlYXRlIGEgZmlsZSBuYW1lZCAnZXhfMDgudHh0JyBpbiB0aGUgJy90bXAnIGRpcmVjdG9yeSBhbmQgYWRkIHRoZSB0ZXh0ICdTaGFua3MnLgo='}), 200
     else:
         return jsonify({'error': 'Invalid key.'}), 400
 
