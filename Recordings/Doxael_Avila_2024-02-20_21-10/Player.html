@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../../Tools/asciinema-player.css" />
+  <style>
+    .maindiv {
+      height: 100%;
+      width: 100%;
+      position: absolute; 
+      border: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div id="maindiv">
+  <div id="player"></div>
+  <script src="../../Tools/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create(
+      'rec.cast',
+      document.getElementById('player'),
+      { cols: 130, rows: 33 }
+    );
+  </script>
+  </div>
+</body>
+</html>
