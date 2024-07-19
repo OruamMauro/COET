@@ -30,6 +30,6 @@ LeNCaK9z7qF,Roman Lenskij,2
 PuLXeK8m7RJ,Diego Gonzalo Elviro,1
 KoRBaN7t6JM,Cesar Mancilla Rodea,1
 PeVNeY9x7KQ,Giovani Badillo Escobar,2
-ToNRaJ8c6PD,Juan Carlos Reyes,0
+ToNRaJ8c6PD,Juan Carlos Reyes,1
 YaNMoR7m8PW,Eduardo Carracedo,2
 PuDReG8w9ZV,Jesus Avalos Olguin,0
